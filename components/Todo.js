@@ -9,7 +9,6 @@ class Todo {
 
   _setEventListener() {
     this._todoCheckboxEl.addEventListener("change", () => {
-      console.log("checked baby");
       this._completed = !this._completed;
     });
 

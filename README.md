@@ -1,17 +1,17 @@
-# Simple Todo App
+# Todo App
 
-Give a brief description of the project here. Feel free to give it a different name.
+This is a simple todo app that allows users to add items with due dates and mark off the items when complete.
 
 ## Functionality
 
-Give a more detailed explanation of the project and its functionality.
+The app uses classes and modules in JavaScript to organize the code and enhance functionality. A class for form validation, helps the user fill out the form correctly and resets the form after submission.
 
 ## Technology
 
-Give a description of the technologies and techniques used. Pictures, GIFs, or screenshots that detail the project features are recommended.
+This project uses HTML, CSS, and JavaScript. The project uses object oriented programing with a use of modules, and classes.
 
 ## Deployment
 
 This project is deployed on GitHub Pages:
 
-- ADD LINK HERE
+- [Deployment Link](https://josiahped.github.io/se_project_todo-app/)
