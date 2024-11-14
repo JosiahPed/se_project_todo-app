@@ -11,7 +11,7 @@ export default class Section {
     });
   }
 
-  addItem(element) {
+  appendItem(element) {
     this._containerSelector.append(element);
   }
 }
