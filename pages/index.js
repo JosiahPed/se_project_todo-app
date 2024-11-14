@@ -56,12 +56,14 @@ const generateTodo = (data) => {
   return todoElement;
 };
 
+const renderTodo = (item) => {
+  const todo = generateTodo(item);
+  section.appendItem(todo);
+};
+
 const section = new Section({
   items: initialTodos,
-  renderer: (items) => {
-    const todo = generateTodo(items);
-    section.appendItem(todo);
-  },
+  renderer: renderTodo,
   containerSelector: ".todos__list",
 });
 section.renderItems();
@@ -69,11 +71,6 @@ section.renderItems();
 addTodoButton.addEventListener("click", () => {
   addTodoPopup.open();
 });
-
-const renderTodo = (item) => {
-  const todo = generateTodo(item);
-  section.appendItem(todo);
-};
 
 const newTodoValidator = new FormValidator(validationConfig, addTodoForm);
 newTodoValidator.enableValidation();
