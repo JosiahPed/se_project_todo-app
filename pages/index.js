@@ -8,7 +8,6 @@ import PopupWithForm from "../components/PopupWithForm.js";
 import TodoCounter from "../components/TodoCounter.js";
 
 const addTodoButton = document.querySelector(".button_action_add");
-const addTodoForm = document.querySelector("#add-todo-form");
 
 const todoCounter = new TodoCounter(initialTodos, ".counter__text");
 
@@ -25,6 +24,8 @@ const addTodoPopup = new PopupWithForm({
   },
 });
 addTodoPopup.setEventListeners();
+
+const addTodoForm = addTodoPopup.getForm();
 
 function handleCheck(completed) {
   todoCounter.updateCompleted(completed);
